@@ -1,0 +1,124 @@
+/* 
+ font-family: 'Minecraft', sans-serif;
+*/
+@import url('http://fonts.cdnfonts.com/css/minecraft-4');
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+#header {
+    background-image: url("../assets/dirt.png");
+    height: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.vcParent {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.title {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 32px;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.linkParent {
+    float: right;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: auto;
+    font-size: 24px;
+    font-family: 'Minecraft';
+    /* A more bluish white */
+}
+
+.links > a {
+    /* remove default formatting for hyperlinks */
+    text-decoration: none;
+    color: #e0f1f7;
+    float: right;
+    margin-left: 24px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../assets/stone.png");
+    /* We want it to repeat */
+    background-repeat: repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#content > .left {
+    height: 100%;
+    width: 100%;
+    /* darken */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#content > .right {
+    height: 100%;
+    width: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* brighten */
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.contentChildInner {
+    margin-top: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counters {
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.counter {
+    display: inline;
+    margin-right: 50px;
+    margin-top: 25px;
+    font-family: "Minecraft";
+    color: #e0f1f7;
+    font-size: 32px;
+    /* Don't break words */
+    white-space: nowrap;
+}
+
+.content {
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: sans-serif;
+    /* A gentle white color */
+    color: #E0D0D0;
+}
+
+.contentParagraph {
+    
+}
+
+.contentImage {
+    /* Make text wrap around it */
+    float: left;
+    padding-right: 25px;
+}
